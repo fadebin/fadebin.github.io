@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bing&#39;s Note</title>
+    <link>http://fadebin.github.io/index.xml</link>
+    <description>Recent content on Bing&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <lastBuildDate>Wed, 08 Feb 2017 14:33:49 +0800</lastBuildDate>
+    <atom:link href="http://fadebin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Hugo</title>
+      <link>http://fadebin.github.io/about/</link>
+      <pubDate>Wed, 08 Feb 2017 14:33:49 +0800</pubDate>
+      
+      <guid>http://fadebin.github.io/about/</guid>
+      <description>
+
+&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/spf13&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Some fun facts about &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Built in &lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Loosely inspired by &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Primarily developed by &lt;a href=&#34;http://spf13.com/&#34;&gt;spf13&lt;/a&gt; on the train while commuting to and from Manhattan.&lt;/li&gt;
+&lt;li&gt;Coded in &lt;a href=&#34;http://vim.org&#34;&gt;Vim&lt;/a&gt; using &lt;a href=&#34;http://vim.spf13.com/&#34;&gt;spf13-vim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Have questions or suggestions? Feel free to &lt;a href=&#34;https://github.com/spf13/hugo/issues/new&#34;&gt;open an issue on GitHub&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/spf13&#34;&gt;ask me on Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>替换文件中的字符串</title>
+      <link>http://fadebin.github.io/post/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>http://fadebin.github.io/post/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;替换文件中的字符串&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;将文件中的字符串全部替换，并生成新的文件，如：执行&amp;rsquo;replace.py ntfs xfs sysInfoin sysInfoout&amp;rsquo;将把sysInfoin文件中的所有&amp;rsquo;ntfs&amp;rsquo;替换为&amp;rsquo;xfs&amp;rsquo;并写入sysInfoout文件。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;代码中使用了 &lt;strong&gt;&amp;lsquo;*args&amp;rsquo;&lt;/strong&gt; 这样的可变参数列表，参数将以一个元组的形式传递到函数中；在本段代码中对args的tuple数量判断是不必要的，但针对 &amp;lsquo;replace_text&amp;rsquo; 这个函数来说这个判断是有必要的；&lt;/li&gt;
+&lt;li&gt;代码中使用了 &lt;strong&gt;with &amp;hellip; as &amp;hellip;&lt;/strong&gt; 这样的控制流语句，在 &lt;strong&gt;with&lt;/strong&gt; 结束后将自动关闭所打开的文件；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/python
+# -*- coding: utf-8 -*-
+&amp;quot;&amp;quot;&amp;quot;Replace string from a file to another file.&amp;quot;&amp;quot;&amp;quot;
+
+import os
+import sys
+
+usage = &amp;quot;Usage: %s search_txt replace_text [infilename [outfiename]].&amp;quot; % os.path.basename(sys.argv[0])
+
+def replace_text( *args):
+
+    opt_args = args[0] if len(args) ==1 else None
+    if not opt_args:
+        print &#39;Error : There are %d tuple args in function : &#39; % len(args), args
+        sys.exit(1)
+    stext, rtext = opt_args[1], opt_args[2]
+    (infile, outfile) = (opt_args[3], opt_args[4]) if len(opt_args) &amp;gt; 4 else (None, None)
+    if not infile or not outfile:
+        print &#39;Error : There are %d args in script.&#39; % len(opt_args)
+        sys.exit(1)
+
+    with open(infile, &#39;r&#39;) as inputfile:
+        with open(outfile, &#39;w+&#39;) as outputfile:
+            for line in inputfile:
+                outputfile.write(line.replace(stext, rtext))
+
+if __name__ == &#39;__main__&#39;:
+
+    if len(sys.argv) &amp;lt; 3:
+        print usage
+    else:
+        replace_text(sys.argv)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
