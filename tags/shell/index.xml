@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Bing&#39;s Note</title>
-    <link>http://fadebin.github.io/tags/shell/index.xml</link>
+    <link>/tags/shell/index.xml</link>
     <description>Recent content in Shell on Bing&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="http://fadebin.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>替换文件中的字符串</title>
-      <link>http://fadebin.github.io/post/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <link>/post/2017/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
       <pubDate>Wed, 08 Feb 2017 16:54:24 +0200</pubDate>
       
-      <guid>http://fadebin.github.io/post/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <guid>/post/2017/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
       <description>&lt;p&gt;&lt;strong&gt;替换文件中的字符串&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;将文件中的字符串全部替换，并生成新的文件，如：执行&amp;rsquo;replace.py ntfs xfs sysInfoin sysInfoout&amp;rsquo;将把sysInfoin文件中的所有&amp;rsquo;ntfs&amp;rsquo;替换为&amp;rsquo;xfs&amp;rsquo;并写入sysInfoout文件。&lt;/p&gt;

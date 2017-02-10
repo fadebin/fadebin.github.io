@@ -13,15 +13,15 @@
 
 
 
-<meta name="twitter:title" content="Bing&#39;s Note"/>
+<meta name="twitter:title" content="Rsync"/>
 <meta name="twitter:description" content="分享软件、学习以及各种有趣的事."/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Bing&#39;s Note" />
+  	<meta property="og:title" content="Rsync &middot; Bing&#39;s Note" />
   	<meta property="og:site_name" content="Bing&#39;s Note" />
-  	<meta property="og:url" content="/" />
+  	<meta property="og:url" content="/tags/rsync/" />
     
     
         
@@ -34,7 +34,7 @@
     <meta property="og:description" content="分享软件、学习以及各种有趣的事." />
     
 
-    <title>Bing&#39;s Note</title>
+    <title>Rsync &middot; Bing&#39;s Note</title>
 
     
     <meta name="description" content="分享软件、学习以及各种有趣的事." />
@@ -54,13 +54,15 @@
 
     
       
+          <link href="index.xml" rel="alternate" type="application/rss+xml" title="Bing&#39;s Note" />
       
-        <link href="index.xml" rel="alternate" type="application/rss+xml" title="Bing&#39;s Note" />
+      
+        <link href="tags/rsync/index.xml" rel="alternate" type="application/rss+xml" title="Rsync &middot; Bing&#39;s Note" />
       
     
     <meta name="generator" content="Hugo 0.18.1" />
 
-    <link rel="canonical" href="/" />
+    <link rel="canonical" href="/tags/rsync/" />
 
     
       
@@ -123,7 +125,7 @@
         
         
             
-            <li class="nav-opened nav-current" role="presentation">
+            <li class="nav-opened" role="presentation">
             	<a href="/">Home</a>
             </li>
         
@@ -145,7 +147,7 @@
     </ul>
     
     
-    <a class="subscribe-button icon-feed" href="index.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="tags/rsync/index.xml">Subscribe</a>
     
 </div>
 <span class="nav-cover"></span>
@@ -156,74 +158,42 @@
 
 
 
-  <header class="main-header" style="background-image: url(images/cover.jpg)">
+	 
+  <header class="main-header tag-head" style="background-image: url(images/cover.jpg)">
   
 
-
     <nav class="main-nav overlay clearfix">
-        
-            <a class="blog-logo" href="/"><img src="images/logo.png" alt="Blog Logo" /></a>
-        
-        
-            <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
-        
+      
+        <a class="blog-logo" href=""><img src="images/logo.png" alt="Home" /></a>
+      
+      
+          <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+      
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
-            
-            
-                <a class="bloglogo" href="https://github.com/fadebin" target="_blank">
-                    <span class="icon-github"></span>
-                </a>
-            &nbsp;
-            
-                        
-            
-            
-            
-            
-            
-            
-
-            <h1 class="page-title">Bing&#39;s Note</h1>
-            <h2 class="page-description">分享软件、学习以及各种有趣的事.</h2>
+            <h1 class="page-title">Rsync</h1>
+            <h2 class="page-description">
+                
+            </h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
 </header>
 
-
-<main id="content" class="content" role="main">
-
-    
-        
-    
-        
-    
-        
+<main class="content" role="main">
     
 
-    
-        
-            
-        
-    
-
-    
-    
-    
-
-    <div class="extra-pagination inner">
-        <nav class="pagination" role="navigation">
+	<div class="extra-pagination inner">
+    <nav class="pagination" role="navigation">
 	
 	<span class="page-number">Page 1 of 1</span>
 	
 </nav>
 
-    </div>
+	</div>
 
-    
-        
+	
+	   
 <article class="post post">
     <header class="post-header">
         <h2 class="post-title"><a href="/post/2017/rsync-fedora-repository/">rsync fedora repository</a></h2>
@@ -260,53 +230,17 @@ rsync -avrzP rsync://mirrors.tuna.tsinghua.edu.cn/fedora/releases/24/Everything/
     </footer>
 </article>
 
-    
-        
-<article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/post/2017/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/">替换文件中的字符串</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>替换文件中的字符串
-将文件中的字符串全部替换，并生成新的文件，如：执行&rsquo;replace.py ntfs xfs sysInfoin sysInfoout&rsquo;将把sysInfoin文件中的所有&rsquo;ntfs&rsquo;替换为&rsquo;xfs&rsquo;并写入sysInfoout文件。
- 代码中使用了 &lsquo;*args&rsquo; 这样的可变参数列表，参数将以一个元组的形式传递到函数中；在本段代码中对args的tuple数量判断是不必要的，但针对 &lsquo;replace_text&rsquo; 这个函数来说这个判断是有必要的； 代码中使用了 with &hellip; as &hellip; 这样的控制流语句，在 with 结束后将自动关闭所打开的文件；  #!/usr/bin/python # -*- coding: utf-8 -*- &quot;&quot;&quot;Replace string from a file to another file.&quot;&quot;&quot; import os import sys usage = &quot;Usage: %s search_txt replace_text [infilename [outfiename]].&quot; % os.path.basename(sys.argv[0]) def replace_text( *args): opt_args = args[0] if len(args) ==1 else None if not opt_args: print 'Error : There are %d tuple args in function : ' % len(args), args sys. <a class="read-more" href="/post/2017/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-        
+	
 
-        
-            <img class="author-thumb" src="images/profile.jpg" alt="Author image" nopin="nopin" />
-        
-        
-            Bing
-        
-        on
-            
-                <a href="tags/python/">#python</a>,
-            
-                <a href="tags/shell/">#shell</a>,
-            
-        
-        <time class="post-date" datetime="2017-02-08T16:54:24&#43;02:00">
-            8 Feb 2017
-        </time>
-    </footer>
-</article>
-
-    
-
-    <nav class="pagination" role="navigation">
+	<nav class="pagination" role="navigation">
 	
 	<span class="page-number">Page 1 of 1</span>
 	
 </nav>
 
-
-
 </main>
+
+
 
     <footer class="site-footer clearfix">
         <section class="copyright"><a href="">Bing&#39;s Note</a> All rights reserved - 2017</section>
@@ -321,4 +255,3 @@ rsync -avrzP rsync://mirrors.tuna.tsinghua.edu.cn/fedora/releases/24/Everything/
     
 </body>
 </html>
-
