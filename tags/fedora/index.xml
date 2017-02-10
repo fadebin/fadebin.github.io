@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fedora on Bing&#39;s Note</title>
-    <link>/tags/fedora/index.xml</link>
+    <link>http://note.fadeinout.bid/tags/fedora/index.xml</link>
     <description>Recent content in Fedora on Bing&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <atom:link href="/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://note.fadeinout.bid/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>rsync fedora repository</title>
-      <link>/post/2017/rsync-fedora-repository/</link>
+      <link>http://note.fadeinout.bid/post/2017/feb/rsync-fedora-repository/</link>
       <pubDate>Thu, 09 Feb 2017 16:42:36 +0800</pubDate>
       
-      <guid>/post/2017/rsync-fedora-repository/</guid>
+      <guid>http://note.fadeinout.bid/post/2017/feb/rsync-fedora-repository/</guid>
       <description>&lt;p&gt;USTC rsync 服务地址&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rsync://rsync.mirrors.ustc.edu.cn （智能解析，推荐）

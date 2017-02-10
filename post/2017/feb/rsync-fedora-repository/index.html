@@ -9,37 +9,41 @@
 
 
     
-        <meta name="twitter:card" content="summary"/>
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="http://note.fadeinout.bid/images/cover.jpg"/>
     
 
 
 
-<meta name="twitter:title" content="About Hugo"/>
+<meta name="twitter:title" content="rsync fedora repository"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="About Hugo &middot; Bing&#39;s Note" />
+  	<meta property="og:title" content="rsync fedora repository &middot; Bing&#39;s Note" />
   	<meta property="og:site_name" content="Bing&#39;s Note" />
-  	<meta property="og:url" content="http://note.fadeinout.bid/about/" />
+  	<meta property="og:url" content="http://note.fadeinout.bid/post/2017/feb/rsync-fedora-repository/" />
     
     
-        
-            <meta property="og:image" content="http://note.fadeinout.bid/images/cover.jpg"/>
-        
+       <meta property="og:image" content="http://note.fadeinout.bid/images/cover.jpg"/>
     
 
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="og:image" content="http://note.fadeinout.bid/" />
-    <meta property="article:published_time" content="2017-02-08T14:33:49&#43;08:00" />
+    <meta property="og:image" content="http://note.fadeinout.bid/images/cover.jpg" />
+    <meta property="article:published_time" content="2017-02-09T16:42:36&#43;08:00" />
 
+    
+    <meta property="article:tag" content="fedora" />
+    
+    <meta property="article:tag" content="rsync" />
     
     
 
-    <title>About Hugo &middot; Bing&#39;s Note</title>
+    <title>rsync fedora repository &middot; Bing&#39;s Note</title>
 
     
     <meta name="description" content="" />
@@ -65,7 +69,7 @@
     
     <meta name="generator" content="Hugo 0.18.1" />
 
-    <link rel="canonical" href="http://note.fadeinout.bid/about/" />
+    <link rel="canonical" href="http://note.fadeinout.bid/post/2017/feb/rsync-fedora-repository/" />
 
     
       
@@ -104,23 +108,30 @@
         "description": "IT software Engineer, Open source enthusiast, Pythonista."
         
     },
-    "headline": "About Hugo",
-    "name": "About Hugo",
-    "wordCount":  11 ,
+    "headline": "rsync fedora repository",
+    "name": "rsync fedora repository",
+    "wordCount":  29 ,
     "timeRequired": "PT1M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "http://note.fadeinout.bid/about/",
-    "datePublished": "2017-02-08T14:33Z",
-    "dateModified": "2017-02-08T14:33Z",
+    "url": "http://note.fadeinout.bid/post/2017/feb/rsync-fedora-repository/",
+    "datePublished": "2017-02-09T16:42Z",
+    "dateModified": "2017-02-09T16:42Z",
     
-    "keywords": "",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://note.fadeinout.bid/images/cover.jpg",
+        "width": 3000,
+        "height": 1445
+    },
+    
+    "keywords": "fedora, rsync",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://note.fadeinout.bid/about/"
+        "@id": "http://note.fadeinout.bid/post/2017/feb/rsync-fedora-repository/"
     }
 }
     </script>
@@ -178,22 +189,19 @@
 
 
 
-
-<header class="main-header post-head no-cover">
-    <nav class="main-nav overlay clearfix">
-
-
-      
-        <a class="blog-logo" href="http://note.fadeinout.bid/"><img src="http://note.fadeinout.bid/images/logo.png" alt="Home" /></a>
-      
-      
-          <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
-      
-    </nav>
-
-    
+  
+  <header class="main-header post-head" style="background-image: url(http://note.fadeinout.bid/images/cover.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
 
 
+  
+      <a class="blog-logo" href="http://note.fadeinout.bid/"><img src="http://note.fadeinout.bid/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
 </header>
 
 
@@ -203,59 +211,48 @@
 
 
 
-  <article class="post ">
+  <article class="post post">
+
     <header class="post-header">
-      <nav class="breadcrumb">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </nav>
-
-
-        <h1 class="post-title">About Hugo</h1>
+        <h1 class="post-title">rsync fedora repository</h1>
         <small></small>
 
         <section class="post-meta">
         
+          <time class="post-date" datetime="2017-02-09T16:42:36&#43;08:00">
+            Feb 9, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://note.fadeinout.bid/tags/fedora/">#fedora</a></span>
+         
+          <span class="post-tag small"><a href="http://note.fadeinout.bid/tags/rsync/">#rsync</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
+      <p>USTC rsync 服务地址</p>
 
+<pre><code class="language-bash">rsync://rsync.mirrors.ustc.edu.cn （智能解析，推荐）
+rsync://cernet.mirrors.ustc.edu.cn（仅解析教育网，推荐）
+rsync://mobile.mirrors.ustc.edu.cn（仅解析中国移动）
+</code></pre>
 
+<p>USTC Repository 同步状态</p>
 
+<pre><code class="language-bash">https://mirrors.ustc.edu.cn/status/
+</code></pre>
 
-<h1 id="关于">关于</h1>
+<p>mirors for rpmfusion by rsync:</p>
 
-<p>基于 <a href="http://gohugo.io/">Hugo</a> 笔记记录站点，托管于 <a href="https://github.com/">Github</a> ,使用<strong>MarkDown</strong>编写，用于学习、研发过程中的笔记记录。</p>
+<pre><code class="language-bash">rsync -avrzP rsync://rsync.mirrors.ustc.edu.cn/rpmfusion/free/fedora/releases/24/Everything/x86_64/os/ ./os
+</code></pre>
 
-<h1 id="访问">访问</h1>
+<p>mirrors for fc24 by rsync:</p>
 
-<p>地址：
-<a href="http://note.fadeinout.bid/">http://note.fadeinout.bid/</a></p>
-
-<h1 id="follow">Follow</h1>
-
-<ul>
-<li><img src="/static/img/about/gmail.png" alt="github" />  <a href="https://github.com/fadebin">https://github.com/fadebin</a></li>
-</ul>
-
-
-
-
-
-
-
-
+<pre><code class="language-bash">rsync -avrzP rsync://mirrors.tuna.tsinghua.edu.cn/fedora/releases/24/Everything/x86_64/os/ ./os
+</code></pre>
 
     </section>
 
@@ -289,9 +286,39 @@
 
 
     
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=rsync%20fedora%20repository&nbsp;-&nbsp;Bing%27s%20Note&amp;url=http%3a%2f%2fnote.fadeinout.bid%2fpost%2f2017%2ffeb%2frsync-fedora-repository%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fnote.fadeinout.bid%2fpost%2f2017%2ffeb%2frsync-fedora-repository%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fnote.fadeinout.bid%2fpost%2f2017%2ffeb%2frsync-fedora-repository%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
 
 
     
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'fadebin';
+  var disqus_url = 'http:\/\/note.fadeinout.bid\/post\/2017\/feb\/rsync-fedora-repository\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
 
 
   </footer>
@@ -301,19 +328,13 @@
 
 <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/">
+      <a class="read-next-story" style="no-cover" href="/post/2017/feb/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/">
           <section class="post">
-              <h2>Bing&#39;s Note</h2>
+              <h2>替换文件中的字符串</h2>
               
           </section>
       </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/post/2017/feb/%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-          <section class="post">
-              <h2>替换文件中的字符串</h2>
-          </section>
-      </a>
   
 </aside>
 
